@@ -1,0 +1,161 @@
+.background {
+    -fx-background-color: #000000;
+}
+
+.label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Cooper";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Cooper";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Cooper";
+    -fx-text-fill: white;
+    -fx-opacity: 0;
+}
+
+.table-view {
+    -fx-background-color: #000000;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        transparent
+        transparent
+        derive(-fx-base, 80%)
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Cooper";
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+/*account selection: highlighted cell rows */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: derive(#1d1d1d,5%);
+}
+
+.separator:horizontal  {
+    -fx-border-color: transparent #000000 transparent #000000;
+    -fx-background-color: transparent, derive(#000000, 5%);
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,5%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Cooper";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu:hover {
+	-fx-background-color:derive(#1d1d1d,5%);
+}
+
+.menu {
+	-fx-background-color: derive(#1d1d1d,5%);
+}
+
+.menu .left-container {
+    -fx-background-color: derive(#1d1d1d,5%);
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+}
+
+.menu .label {
+     -fx-text-fill: white; /* LOCATE */
+     -fx-background-color: derive(#1d1d1d,5%);
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+     -fx-background-color: derive(#1d1d1d,5%);
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #7f7f7f; /* LOCATE */
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: derive(#1d1d1d,5%); /* absolute background */
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  /*8 1 8 1*/
+    /*-fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;*/ /* 4 1 8 1 */
+}
+
+.text-field {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Cooper";
+}
+
+.button {
+	-fx-background-color:
+        #1d1d1d,
+        linear-gradient(#000000, #000000),
+        linear-gradient(#1d1d1d 0%, #000000 49%, #000000 50%, #1d1d1d 100%);
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 3;
+    -fx-padding: 5 5 5 5;
+}
+
+.button:hover {
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #000000;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+}
+
+.button:default {
+	-fx-background-color:
+        #1d1d1d,
+        linear-gradient(#000000, #000000),
+        linear-gradient(#1d1d1d 0%, #000000 49%, #000000 50%, #1d1d1d 100%);
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 3;
+    -fx-padding: 5 5 5 5;
+}
+
+.button:default:hover {
+    -fx-background-color: #1a1a1a;
+}

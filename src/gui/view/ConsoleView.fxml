@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.ConsoleController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" styleClass="label-bright" text="Console:" />
+      <TextArea fx:id="ta" layoutX="14.0" layoutY="33.0" prefHeight="284.0" prefWidth="573.0" wrapText="true" />
+   </children>
+   <styleClass>
+      <String fx:value="background" />
+      <String fx:value="label-bright" />
+   </styleClass>
+</AnchorPane>

@@ -1,0 +1,29 @@
+.text-area {
+  -fx-font: 14px "Consolas";
+  -fx-border-color: #00ff00;
+  -fx-prompt-text-fill: #00ff00;
+  -fx-text-fill: #00ff00;
+  -fx-background-color: #000000;
+}
+
+.text-area .content {
+  -fx-font: 14px "Consolas";
+  -fx-border-color: #00ff00;
+  -fx-prompt-text-fill: #00ff00;
+  -fx-text-fill: #00ff00;
+  -fx-background-color: #000000;
+}
+
+.text-area .terminalTextArea {
+  -fx-font: 14px "Consolas";
+  -fx-border-color: #00ff00;
+  -fx-prompt-text-fill: #00ff00;
+  -fx-text-fill: #00ff00;
+  -fx-background-color: #000000;
+}
+
+.text-area .scroll-pane {
+  -fx-hbar-policy : never;
+  -fx-vbar-policy : as-needed;
+  -fx-background-color: transparent;
+}
